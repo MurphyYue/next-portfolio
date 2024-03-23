@@ -50,3 +50,24 @@ export const projectsData = [
     imageUrl: projectDemoImg,
   },
 ] as const;
+
+export const skillsData = [
+  "HTML",
+  "CSS",
+  "JavaScript",
+  "TypeScript",
+  "React",
+  "Vue",
+  "Webpack",
+  "Qiankun",
+  "Next.js",
+  "Node.js",
+  "Git",
+  "Tailwind",
+  "Redux",
+  "Express",
+  "Docker",
+  "PostgreSQL",
+  "MySQL",
+] as const;
+
