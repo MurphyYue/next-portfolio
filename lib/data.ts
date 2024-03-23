@@ -31,14 +31,14 @@ export const projectsData = [
   {
     title: "Intelligent Finance&Taxation Management platform",
     description:
-      "I worked as a front-end developer on this project for 2 years. Users from small companies can manage their enterprise's finance and tax on this platform",
+      "Users from small companies can manage their enterprise's finance and tax on this platform",
     tags: ["React", "mobx", "eggjs", "typescript", "webpack", "dojojs"],
     imageUrl: projectDemoImg,
   },
   {
-    title: "Yongyou AIoT Management",
+    title: "Yonyou AIoT Management",
     description:
-      "This project is used to connect the equipment in the user's factory, better monitor the operation of the equipment, and remind the relevant personnel to deal with the equipment when there is something wrong with the equipment.",
+      "Connect the equipment in the factory, better monitor the operation of the equipment.",
     tags: ["React", "react-router", "react-redux", "ant-design", "webpack", "echarts"],
     imageUrl: projectDemoImg,
   },
