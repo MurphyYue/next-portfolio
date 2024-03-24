@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { motion } from "framer-motion";
-import SecondHeadding from './section-heading';
+import SectionHeadding from './section-heading';
 import { useSectionInView } from "@/lib/hooks";
 
 export default function About() {
@@ -16,7 +16,7 @@ export default function About() {
       id="about"
       ref={ref}
     >
-      <SecondHeadding>About Me</SecondHeadding>
+      <SectionHeadding>About Me</SectionHeadding>
       <p className="mb-3">
         After graduating with a degree in <span className="font-medium">Accounting</span>, I decided
         to pursue my passion for programming. I enrolled in a coding bootcamp and learned{" "}

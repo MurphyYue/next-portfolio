@@ -1,10 +1,10 @@
 import React from 'react';
 
-type SecondHeaddingProps = {
+type SectionHeaddingProps = {
   children: React.ReactNode
 }
 
-export default function SecondHeadding({ children }: SecondHeaddingProps) {
+export default function SectionHeadding({ children }: SectionHeaddingProps) {
   return (
     <h2 className='text-3xl font-medium capitalize mb-8 text-center'>
       {children}

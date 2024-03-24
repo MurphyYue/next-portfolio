@@ -1,4 +1,8 @@
 import projectDemoImg from "@/public/peoject-demo.png";
+import React from "react";
+import { CgWorkAlt } from "react-icons/cg";
+import { FaReact } from "react-icons/fa";
+import { LuGraduationCap } from "react-icons/lu";
 
 export const links = [
   {
@@ -71,3 +75,19 @@ export const skillsData = [
   "MySQL",
 ] as const;
 
+export const experiencesData = [
+  {
+    title: "bachelor's degree",
+    description:
+      "I graduated from Beifang University of Nationalities. I immediately found a job as a front-end developer.",
+    icon: React.createElement(LuGraduationCap),
+    date: "2015",
+  },
+  {
+    title: "Front-end Developer",
+    description:
+      "After graduating from my undergraduate course in 2015, I worked as a front-end developer in several different companies.",
+    icon: React.createElement(CgWorkAlt),
+    date: "2015 - present",
+  },
+] as const;
