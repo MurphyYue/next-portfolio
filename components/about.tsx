@@ -18,24 +18,25 @@ export default function About() {
     >
       <SectionHeadding>About Me</SectionHeadding>
       <p className="mb-3">
-        After graduating with a degree in <span className="font-medium">Accounting</span>, I decided
-        to pursue my passion for programming. I enrolled in a coding bootcamp and learned{" "}
-        <span className="font-medium">full-stack web development</span>.{" "}
-        <span className="italic">My favorite part of programming</span> is the problem-solving
-        aspect. I <span className="underline">love</span> the feeling of finally figuring out a
-        solution to a problem. My core stack is{" "}
-        <span className="font-medium">React, Next.js, Node.js, and MongoDB</span>. I am also
-        familiar with TypeScript and Prisma. I am always looking to learn new technologies. I am
-        currently looking for a <span className="font-medium">full-time position</span> as a
-        software developer.
+        After graduating from college with a <span className="font-medium">bachelor's degree</span>,
+        I began to work as a <span className="font-medium">front-end</span>
+        developer. I started using jQuery to do some simple page development, and about a year later
+        I found Vuejs very efficient and began to use it, and then I used Reactjs for about 3 years
+        in my later work. Most of the projects I have developed are enterprise management systems,
+        mainly PC browser projects.
       </p>
-
+      <p className="mb-3">
+        After work, I like to learn the latest front-end technology. So I have done mobile projects
+        based on <span className="font-medium">uni-app</span>. I have also done projects based on{" "}
+        <span className="font-medium">nextjs</span>. My goal is to do{" "}
+        <span className="font-medium">full-stack</span> work based on nextjs. I'm also interested in{" "}
+        <span className="font-medium">web3</span> development, so I'm learning solidity and ethjs.
+      </p>
       <p>
-        <span className="italic">When I'm not coding</span>, I enjoy playing video games, watching
-        movies, and playing with my dog. I also enjoy{" "}
-        <span className="font-medium">learning new things</span>. I am currently learning about{" "}
-        <span className="font-medium">history and philosophy</span>. I'm also learning how to play
-        the guitar.
+        <span className="italic">When I'm not coding</span>, I enjoy biking, traveling, watching
+        movies, and playing with my son. I also enjoy{" "}
+        <span className="font-medium">learning new language</span>. I am currently learning about{" "}
+        <span className="font-medium">English</span>
       </p>
     </motion.section>
   );
