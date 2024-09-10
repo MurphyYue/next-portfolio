@@ -33,10 +33,24 @@ export const links = [
 
 export const projectsData = [
   {
+    title: "SocialMint",
+    description:
+      "SocialMint is a Social Finace project which is a social media platform that allows users to earn rewards for engaging with content and interacting with other users.",
+    tags: ["Next.js", "React", "react-redux", "Wagmi", "Tailwind"],
+    imageUrl: projectDemoImg,
+  },
+  {
+    title: "BabyTrove",
+    description:
+      "BabyTrove is my personal project which is an app for parents which you can record yours baby's current state and browse history state which you recorded.",
+    tags: ["Next.js", "next-auth", "AWS S3", "Prisma", "Postgresql", "Tailwind"],
+    imageUrl: projectDemoImg,
+  },
+  {
     title: "Intelligent Finance&Taxation Management platform",
     description:
       "Users from small companies can manage their enterprise's finance and tax on this platform",
-    tags: ["React", "mobx", "eggjs", "typescript", "webpack", "dojojs"],
+    tags: ["React", "Mobx", "Eggjs", "Typescript", "webpack", "dojojs"],
     imageUrl: projectDemoImg,
   },
   {

@@ -23,9 +23,9 @@ export default function Intro() {
       >
         <span className="font-bold">Hello, I'm Murphy Yue.</span> I'm a{" "}
         <span className="font-bold">front-end developer</span> with{" "}
-        <span className="font-bold">8 years</span> of experience. I enjoy building{" "}
-        <span className="italic">sites & apps</span>. My focus is{" "}
-        <span className="underline">React (Next.js)</span>.
+        <span className="font-bold">9 years</span> of experience. I enjoy building{" "}
+        <span className="italic">sites & apps</span>. My focus are{" "}
+        <span className="underline">Vue & React (Vite & Next)</span>.
       </motion.h1>
       <motion.div
         className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium"
