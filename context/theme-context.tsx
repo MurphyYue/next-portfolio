@@ -3,7 +3,7 @@
 import React, { useState, createContext, useContext, useEffect } from "react";
 
 type Theme = "light" | "dark";
-type Lang = "cn" | "en";
+export type Lang = "cn" | "en";
 
 type ThemeContextProviderProps = {
   children: React.ReactNode;

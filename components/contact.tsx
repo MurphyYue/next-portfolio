@@ -7,9 +7,11 @@ import { motion } from "framer-motion";
 import toast from "react-hot-toast";
 import SubmitButton from "./submit-button";
 import { sendEmail } from "@/actions/sendEmail"
+import { useLang } from "@/context/theme-context"
 
 export default function Contact() {
   const { ref } = useSectionInView("#contact");
+  const { lang } = useLang();
   return (
     <motion.section
       id="contact"
@@ -28,13 +30,13 @@ export default function Contact() {
         once: true,
       }}
     >
-      <SectionHeading>Contact me</SectionHeading>
+      <SectionHeading>{lang === "en" ? "Contact me" : "联系我"}</SectionHeading>
       <p className="text-gray-700 -mt-6 dark:text-white/80">
-        Please contact me directly at{" "}
+        {lang === "en" ? "Please contact me directly at" : "请直接联系我"}
         <a className="underline" href="mailto:murphyyue@icloud.com">
           murphyyue@icloud.com
         </a>{" "}
-        or through this form.
+        {lang === "en" ? "or through this form." : "或通过此表单联系我。"}
       </p>
       <form
         action={async (formData) => {
@@ -55,16 +57,16 @@ export default function Contact() {
           type="email"
           required
           maxLength={500}
-          placeholder="Your email"
+          placeholder={lang === "en" ? "Your email" : "你的邮箱"}
         />
         <textarea
           className="h-52 my-3 rounded-lg borderBlack p-4 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
           name="message"
-          placeholder="Your message"
+          placeholder={lang === "en" ? "Your message" : "你的消息"}
           required
           maxLength={5000}
         />
-        <SubmitButton />
+        <SubmitButton lang={lang} />
       </form>
     </motion.section>
   );

@@ -1,8 +1,12 @@
 import React from "react";
 import { useFormStatus } from "react-dom";
 import { FaPaperPlane } from "react-icons/fa";
+import { Lang } from "@/context/theme-context"
 
-export default function SubmitButton() {
+interface SubmitButtonProps {
+  lang: Lang;
+}
+const SubmitButton: React.FC<SubmitButtonProps> = ({ lang }) => {
   const { pending } = useFormStatus();
   return (
     <button
@@ -14,10 +18,11 @@ export default function SubmitButton() {
         <div className="h-5 w-5 animate-spin rounded-full border-b-2 border-white"></div>
       ) : (
         <>
-          Submit{" "}
+          {lang === "en" ? "Send" : "发送"}
           <FaPaperPlane className="text-xs opacity-70 transition-all group-hover:translate-x-1 group-hover:-translate-y-1" />{" "}
         </>
       )}
     </button>
   );
 }
+export default SubmitButton;
