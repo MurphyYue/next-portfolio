@@ -1,13 +1,13 @@
 "use client";
 import { projectsData } from "@/lib/data";
 import { motion, useScroll, useTransform } from "framer-motion";
-import Image from "next/image"
-import { useRef } from "react";
+import Image from "next/image";
+import { useRef, useState, useEffect } from "react";
 
 type ProjectProps = (typeof projectsData)[number];
 
 export default function Project({ title, description, tags, imageUrl }: ProjectProps) {
-  const ref = useRef< HTMLDivElement>(null);
+  const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: ref,
     offset: ['0 1', '1 1']
@@ -15,6 +15,17 @@ export default function Project({ title, description, tags, imageUrl }: ProjectP
   const scale = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
   const opacity = useTransform(scrollYProgress, [0, 1], [0.5, 1]);
 
+  // modal open state
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  // disable scroll when modal is open
+  useEffect(() => {
+    if (isModalOpen) {
+      document.body.classList.add('overflow-hidden');
+    } else {
+      document.body.classList.remove('overflow-hidden');
+    }
+  }, [isModalOpen]);
   return (
     <motion.div
       className="group mb-3 sm:mb-8 last:mb-0"
@@ -45,18 +56,32 @@ export default function Project({ title, description, tags, imageUrl }: ProjectP
           alt="Project I worked on"
           quality={95}
           className="absolute hidden sm:block top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl
-        transition 
-        group-hover:scale-[1.04]
-        group-hover:-translate-x-3
-        group-hover:translate-y-3
-        group-hover:-rotate-2
+          cursor-pointer
+          transition 
+          group-hover:scale-[1.04]
+          group-hover:-translate-x-3
+          group-hover:translate-y-3
+          group-hover:-rotate-2
 
-        group-even:group-hover:translate-x-3
-        group-even:group-hover:translate-y-3
-        group-even:group-hover:rotate-2
+          group-even:group-hover:translate-x-3
+          group-even:group-hover:translate-y-3
+          group-even:group-hover:rotate-2
 
-        group-even:right-[initial] group-even:-left-40"
+          group-even:right-[initial] group-even:-left-40"
+          onClick={() => setIsModalOpen(true)}
         />
+
+        {isModalOpen && (
+          <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-75 z-50">
+            <Image
+              src={imageUrl}
+              alt="Full Project Image"
+              quality={95}
+              className="max-w-full max-h-full object-contain cursor-pointer"
+              onClick={() => setIsModalOpen(false)}
+            />
+          </div>
+        )}
       </section>
     </motion.div>
   );
