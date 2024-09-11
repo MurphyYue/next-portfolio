@@ -1,20 +1,20 @@
 "use client"
 
-import { SectionName } from '@/lib/types';
+import { SectionHash } from '@/lib/types';
 import React, { useState, createContext, useContext } from "react";
 
 type ActiveSectionContextProviderProps = {
   children: React.ReactNode;
 };
 type ActiveSectionContextType = {
-  activeSection: SectionName;
-  setActiveSection: React.Dispatch<React.SetStateAction<SectionName>>;
+  activeSection: SectionHash;
+  setActiveSection: React.Dispatch<React.SetStateAction<SectionHash>>;
 };
 
 const ActiveSectionContext = createContext<ActiveSectionContextType | null>(null);
 
 export default function ActiveSectionContextProvider({ children }: ActiveSectionContextProviderProps) {
-  const [activeSection, setActiveSection] = useState<SectionName>("Home");
+  const [activeSection, setActiveSection] = useState<SectionHash>("#home");
   return (
     <ActiveSectionContext.Provider
       value={{

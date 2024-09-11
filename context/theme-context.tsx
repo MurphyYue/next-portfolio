@@ -3,6 +3,7 @@
 import React, { useState, createContext, useContext, useEffect } from "react";
 
 type Theme = "light" | "dark";
+type Lang = "cn" | "en";
 
 type ThemeContextProviderProps = {
   children: React.ReactNode;
@@ -13,9 +14,15 @@ type ThemeContextType = {
   toggleTheme: () => void
 }
 
-const ThemeContext = createContext<ThemeContextType | null>(null);
+type LangContextType = {
+  lang: Lang,
+  toggleLang: () => void
+}
 
-export default function ThemeContextProvider({ children }: ThemeContextProviderProps) {
+const ThemeContext = createContext<ThemeContextType | null>(null);
+const LangContext = createContext<LangContextType | null>(null);
+
+export function ThemeContextProvider({ children }: ThemeContextProviderProps) {
   const [theme, setTheme] = useState<Theme>("light");
   const toggleTheme = () => {
     if (theme === "light") {
@@ -56,6 +63,31 @@ export function useTheme() {
   const context = useContext(ThemeContext);
   if (context === null) {
     throw new Error("useTheme must be used within an ThemeContextProvider");
+  }
+  return context;
+}
+
+export function LangContextProvider({ children }: ThemeContextProviderProps) {
+  const [lang, setLang] = useState<Lang>("en");
+  const toggleLang = () => {
+    setLang(lang === "en" ? "cn" : "en");
+  }
+  return (
+    <LangContext.Provider
+      value={{
+        lang,
+        toggleLang,
+      }}
+    >
+      {children}
+    </LangContext.Provider>
+  );
+}
+
+export function useLang() {
+  const context = useContext(LangContext);
+  if (context === null) {
+    throw new Error("useLang must be used within an LangContextProvider");
   }
   return context;
 }

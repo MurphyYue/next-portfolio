@@ -4,8 +4,9 @@ import "./globals.css";
 import ActiveSectionContextProvider from "@/context/active-section-context";
 import Header from "@/components/header";
 import { Toaster } from "react-hot-toast";
-import ThemeContextProvider from "@/context/theme-context";
+import { ThemeContextProvider, LangContextProvider } from "@/context/theme-context";
 import ThemeSwitch from "@/components/theme-switch";
+import LangSwitch from "@/components/lang-switch";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,12 +27,15 @@ export default function RootLayout({
       >
 
         <ThemeContextProvider>
-          <ActiveSectionContextProvider>
-            <Header />
+          <LangContextProvider>
+            <ActiveSectionContextProvider>
+              <Header />
             {children}
             <Toaster position="top-right" />
             <ThemeSwitch />
+            <LangSwitch />
           </ActiveSectionContextProvider>
+          </LangContextProvider>
         </ThemeContextProvider>
       </body>
     </html>

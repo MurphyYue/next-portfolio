@@ -9,7 +9,7 @@ import SubmitButton from "./submit-button";
 import { sendEmail } from "@/actions/sendEmail"
 
 export default function Contact() {
-  const { ref } = useSectionInView("Contact");
+  const { ref } = useSectionInView("#contact");
   return (
     <motion.section
       id="contact"

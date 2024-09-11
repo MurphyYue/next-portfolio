@@ -1,10 +1,10 @@
 "use client";
-import { projectsData } from "@/lib/data";
+import { projectsData, projectsDataCN } from "@/lib/data";
 import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
 import { useRef, useState, useEffect } from "react";
 
-type ProjectProps = (typeof projectsData)[number];
+type ProjectProps = (typeof projectsData)[number] | (typeof projectsDataCN)[number];
 
 export default function Project({ title, description, tags, imageUrl }: ProjectProps) {
   const ref = useRef<HTMLDivElement>(null);
