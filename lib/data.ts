@@ -1,4 +1,6 @@
 import projectDemoImg from "@/public/peoject-demo.png";
+import socialMintImg from "@/public/social_mint.png";
+import ai4workImg from "@/public/ai4work.png";
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
@@ -33,17 +35,24 @@ export const links = [
 
 export const projectsData = [
   {
+    title: "AI4Work",
+    description:
+      "AI4Work is a tool to help you building web page by chatting with AI",
+    tags: ["ViteJs", "React", "shadcn-ui", "AI models", "Tailwind"],
+    imageUrl: ai4workImg,
+  },
+  {
     title: "SocialMint",
     description:
       "SocialMint is a Social Finace project which is a social media platform that allows users to earn rewards for engaging with content and interacting with other users.",
-    tags: ["Next.js", "React", "react-redux", "Wagmi", "Tailwind"],
-    imageUrl: projectDemoImg,
+    tags: ["NextJs", "React", "react-redux", "Wagmi", "Tailwind"],
+    imageUrl: socialMintImg,
   },
   {
     title: "BabyTrove",
     description:
       "BabyTrove is my personal project which is an app for parents which you can record yours baby's current state and browse history state which you recorded.",
-    tags: ["Next.js", "next-auth", "AWS S3", "Prisma", "Postgresql", "Tailwind"],
+    tags: ["NextJs", "next-auth", "AWS S3", "Prisma", "Postgresql", "Tailwind"],
     imageUrl: projectDemoImg,
   },
   {
@@ -75,19 +84,19 @@ export const skillsData = [
   "JavaScript",
   "TypeScript",
   "React",
+  "NextJs",
   "Vue",
+  "ViteJs",
+  "AI",
   "Webpack",
   "Qiankun",
-  "Next.js",
-  "Node.js",
+  "NodeJs",
   "Ethers",
   "Wagmi",
   "Tailwind",
   "Redux",
   "Express",
-  "Docker",
   "PostgreSQL",
-  "MySQL",
 ] as const;
 
 export const experiencesData = [
