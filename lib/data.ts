@@ -164,7 +164,7 @@ export const skillsData = [
   "NodeJs",
   "Ethers",
   "Wagmi",
-  "Tailwind",
+  "TailwindCSS",
   "Redux",
   "Express",
   "PostgreSQL",
@@ -189,16 +189,15 @@ export const experiencesData = [
 export const experiencesDataCN = [
   {
     title: "本科学校",
-    description:
-      "2011年-2015年，北方民族大学，测控技术与仪器专业",
+    description: "2011年-2015年，就读于北方民族大学，测控技术与仪器专业。",
     icon: React.createElement(LuGraduationCap),
-    date: "2015",
+    date: "2015年",
   },
   {
     title: "前端开发工程师",
     description:
-      "毕业后开始从事前端开发的工作。",
+      "毕业后开始从事前端开发的工作，并先后在几家公司工作，目前工作于银金融科技有限责任公司。出于对web3领域的兴趣，我参与了WTF Academy的开源项目WTF Solidity并参与了2024年ETH Beijing竞赛。",
     icon: React.createElement(CgWorkAlt),
-    date: "2015 - present",
+    date: "2015年 - 现在",
   },
 ] as const;

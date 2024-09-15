@@ -38,7 +38,7 @@ export default function Intro() {
         >
           <span className="font-bold">你好，我是岳铭飞</span> 我是一名{" "}有着{" "}
           <span className="font-bold">9 年</span> 工作经验的 <span className="font-bold">前端开发工程师</span>.
-          我喜欢开发 <span className="italic">网站和应用</span>. 我的专注领域是{" "}
+          主要从事 <span className="italic">网站和应用</span>的开发. 我的专注领域是{" "}
           <span className="underline">Vue & React (Vite & Next)</span>.
         </motion.h1>
       )}
