@@ -68,10 +68,17 @@ export function useTheme() {
 }
 
 export function LangContextProvider({ children }: ThemeContextProviderProps) {
-  const [lang, setLang] = useState<Lang>("en");
+  const [lang, setLang] = useState<Lang>("cn");
+
+  useEffect(() => {
+    const userLang = navigator.language.split("-")[0]; // e.g., "en-US" -> "en"
+    const defaultLang = userLang === "en" ? "en" : "cn";
+    setLang(defaultLang);
+  }, []);
+
   const toggleLang = () => {
     setLang(lang === "en" ? "cn" : "en");
-  }
+  };
   return (
     <LangContext.Provider
       value={{
