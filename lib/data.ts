@@ -1,6 +1,7 @@
 import projectDemoImg from "@/public/peoject-demo.png";
 import socialMintImg from "@/public/social_mint.png";
 import ai4workImg from "@/public/ai4work.png";
+import chatstar from "@/public/chat_star.jpg";
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { LuGraduationCap } from "react-icons/lu";
@@ -61,90 +62,99 @@ export const linksCN = [
 
 export const projectsData = [
   {
-    title: "AI4Work",
+    title: "star cat",
     description:
-      "AI4Work is a tool to help you building web page by chatting with AI",
-    tags: ["ViteJs", "React", "shadcn-ui", "AI models", "Tailwind"],
+      "An AI Agent-based virtual twin interactive app for autistic children aims to help parents understand their children's behavior and provide personalized interactive suggestions. championship at Gemma Hackathon 2024 (Google Shenzhen)",
+    tags: ["Dify", "Next.js", "Tailwind CSS"],
+    imageUrl: chatstar,
+  },
+  {
+    title: "AI4Work",
+    description: "AI4Work is a tool to help you building web page by chatting with AI",
+    tags: ["Vite.js", "React.js", "shadcn-ui", "AI models", "Tailwind CSS"],
     imageUrl: ai4workImg,
   },
   {
     title: "SocialMint",
     description:
       "SocialMint is a Social Finace project which is a social media platform that allows users to earn rewards for engaging with content and interacting with other users.",
-    tags: ["NextJs", "React", "react-redux", "Wagmi", "Tailwind"],
+    tags: ["Next.js", "React.js", "react-redux", "Wagmi", "Tailwind CSS"],
     imageUrl: socialMintImg,
   },
   {
     title: "BabyTrove",
     description:
       "BabyTrove is my personal project which is an app for parents which you can record yours baby's current state and browse history state which you recorded.",
-    tags: ["NextJs", "next-auth", "AWS S3", "Prisma", "Postgresql", "Tailwind"],
+    tags: ["Next.js", "next-auth", "AWS S3", "Prisma", "PostgreSQL", "Tailwind CSS"],
     imageUrl: projectDemoImg,
   },
   {
     title: "Intelligent Finance&Taxation Management platform",
     description:
       "Users from small companies can manage their enterprise's finance and tax on this platform",
-    tags: ["React", "Mobx", "Eggjs", "Typescript", "webpack", "dojojs"],
+    tags: ["React.js", "Mobx", "Egg.js", "Typescript", "Webpack", "dojo.js"],
     imageUrl: projectDemoImg,
   },
   {
     title: "Yonyou AIoT Management",
     description:
       "Connect the equipment in the factory, better monitor the operation of the equipment.",
-    tags: ["React", "react-router", "react-redux", "ant-design", "webpack", "echarts"],
+    tags: ["React.js", "react-router", "react-redux", "ant-design", "Webpack", "Echarts"],
     imageUrl: projectDemoImg,
   },
   {
     title: "Investment Management platform",
     description:
       "An Investment Management platform for Longfor Group which include PC and mobile(iOS by H5)",
-    tags: ["qiankun", "vue", "vuex", "vue-router", "elementUI", "echarts"],
+    tags: ["Qiankun", "Vue.js", "Vuex", "vue-router", "ElementUI", "Echarts"],
     imageUrl: projectDemoImg,
   },
 ] as const;
 
 export const projectsDataCN = [
   {
-    title: "AI4Work",
+    title: "星童猫咪",
     description:
-      "AI4Work 是一款基于与AI对话来帮助你构建网页的工具",
-    tags: ["ViteJs", "React", "shadcn-ui", "AI models", "Tailwind"],
+      "一款基于 AI Agent 的自闭症儿童虚拟孪生互动app，旨在帮助家长理解孩子的行为，并提供个性化互动建议。本项目在 Gemma Hackathon 2024（Google 深圳） 斩获冠军",
+    tags: ["Dify", "Next.js", "Tailwind CSS"],
+    imageUrl: chatstar,
+  },
+  {
+    title: "AI4Work",
+    description: "AI4Work 是一款基于与AI对话来帮助你构建网页的工具",
+    tags: ["Vite.js", "React.js", "shadcn-ui", "AI models", "Tailwind CSS"],
     imageUrl: ai4workImg,
   },
   {
     title: "SocialMint",
     description:
       "SocialMint 是一个社会金融项目，它是一个社交媒体平台，允许用户通过参与内容和与其他用户互动来赚取奖励。",
-    tags: ["NextJs", "React", "react-redux", "Wagmi", "Tailwind"],
+    tags: ["Next.js", "React.js", "react-redux", "Wagmi", "Tailwind CSS"],
     imageUrl: socialMintImg,
   },
   {
     title: "BabyTrove",
     description:
       "BabyTrove 是我的个人项目，它是一个为父母设计的应用程序，你可以记录你孩子的当前状态，并浏览你记录的历史状态。",
-    tags: ["NextJs", "next-auth", "AWS S3", "Prisma", "Postgresql", "Tailwind"],
+    tags: ["Next.js", "next-auth", "AWS S3", "Prisma", "PostgreSQL", "Tailwind CSS"],
     imageUrl: projectDemoImg,
   },
   {
     title: "智能财税管理平台",
-    description:
-      "小型企业用户可以在该平台上管理其企业的财务和税收",
-    tags: ["React", "Mobx", "Eggjs", "Typescript", "webpack", "dojojs"],
+    description: "小型企业用户可以在该平台上管理其企业的财务和税收",
+    tags: ["React.js", "Mobx", "Egg.js", "Typescript", "Webpack", "dojo.js"],
     imageUrl: projectDemoImg,
   },
   {
     title: "用友AIoT管理平台",
-    description:
-      "连接工厂设备，更好地监控设备运行情况。",
-    tags: ["React", "react-router", "react-redux", "ant-design", "webpack", "echarts"],
+    description: "连接工厂设备，更好地监控设备运行情况。",
+    tags: ["React.js", "react-router", "react-redux", "ant-design", "Webpack", "Echarts"],
     imageUrl: projectDemoImg,
   },
   {
     title: "双湖投资管理平台",
-    description:
-      "龙湖集团的投资管理平台，包括PC和移动端（iOS 通过 H5）",
-    tags: ["qiankun", "vue", "vuex", "vue-router", "elementUI", "echarts"],
+    description: "龙湖集团的投资管理平台，包括PC和移动端（iOS 通过 H5）",
+    tags: ["Qiankun", "Vue.js", "Vuex", "vue-router", "ElementUI", "Echarts"],
     imageUrl: projectDemoImg,
   },
 ] as const;
@@ -167,6 +177,7 @@ export const skillsData = [
   "Redux",
   "Express.js",
   "PostgreSQL",
+  "Dify(build AI Agent)",
 ] as const;
 
 export const experiencesData = [
