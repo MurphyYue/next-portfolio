@@ -150,23 +150,22 @@ export const projectsDataCN = [
 ] as const;
 
 export const skillsData = [
-  "HTML",
-  "CSS",
+  "HTML5",
+  "CSS3",
   "JavaScript",
   "TypeScript",
-  "React",
-  "NextJs",
-  "Vue",
-  "ViteJs",
-  "AI",
+  "React.js",
+  "Next.js",
+  "Vue.js",
+  "Vite.js",
   "Webpack",
   "Qiankun",
-  "NodeJs",
-  "Ethers",
+  "Node.js",
+  "Ethers.js",
   "Wagmi",
-  "TailwindCSS",
+  "Tailwind CSS",
   "Redux",
-  "Express",
+  "Express.js",
   "PostgreSQL",
 ] as const;
 

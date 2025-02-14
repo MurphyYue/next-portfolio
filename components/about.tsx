@@ -24,10 +24,10 @@ export default function About() {
         <p className="mb-3">
           After graduating from college with a{" "}
           <span className="font-medium">bachelor's degree</span>, I began to
-          work as a <span className="font-medium">front-end</span>
+          work as a <span className="font-medium">front-end </span>
           developer. I started using jQuery to do some simple page development,
-          and about a year later I found Vuejs very efficient and began to use
-          it, and then I used Reactjs for about 3 years in my later work. Most
+          and about a year later I found Vue.js very efficient and began to use
+          it, and then I used React.js for about 3 years in my later work. Most
           of the projects I have developed are enterprise management systems,
           mainly PC browser projects.
         </p>
@@ -39,7 +39,7 @@ export default function About() {
           is to do <span className="font-medium">full-stack</span> work based on
           nextjs. I'm also interested in{" "}
           <span className="font-medium">web3</span> development, so I'm learning
-          solidity and ethers.js.
+          solidity and Ethers.js.
         </p>
         <p>
           <span className="italic">When I'm not coding</span>, I enjoy biking,
@@ -52,11 +52,11 @@ export default function About() {
         <React.Fragment>
         <p className="mb-3">
           大学毕业后，我开始从事前端开发工作。起初使用jQuery进行一些简单的页面开发，
-          大约一年后，我发现Vuejs非常高效并开始使用它，之后在后来的工作中使用了大约3年的Reactjs。
+          大约一年后，我发现Vue.js非常高效并开始使用它，之后在后来的工作中使用了大约3年的React.js。
           我开发的大多数项目都是企业管理系统，主要是PC浏览器项目。
         </p>
         <p className="mb-3">
-          工作之余，我喜欢学习最新的前端技术。所以我做过基于uni-app的移动项目。我也做过基于nextjs的项目。我的目标是基于nextjs进行全栈工作。我也对web 3开发感兴趣，所以我正在学习solidity和ethers.js。
+          工作之余，我喜欢学习最新的前端技术。所以我做过基于uni-app的移动项目。我也做过基于nextjs的项目。我的目标是基于nextjs进行全栈工作。我也对web3开发感兴趣，所以我正在学习solidity和Ethers.js。
         </p>
         <p>
           当我不编码时，我喜欢骑自行车、旅行、看电影以及一些亲子活动。我也喜欢学习新语言。我目前正在学习英语。
