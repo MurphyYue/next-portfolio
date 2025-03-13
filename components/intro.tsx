@@ -60,7 +60,7 @@ export default function Intro() {
 
         <a
           className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
-          href="/CV.pdf"
+          href={lang === "en" ? '/Murphy_Yue_Frontend_Developer.pdf' : '/Murphy_Yue_Frontend_Developer_CN.pdf'}
           download
         >
           {lang === "en" ? "Download CV" : "下载简历"}
