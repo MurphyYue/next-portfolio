@@ -26,7 +26,7 @@ export default function Intro() {
         >
           <span className="font-bold">Hello, I'm Murphy Yue.</span> I'm a{" "}
           <span className="font-bold">front-end developer</span> with{" "}
-          <span className="font-bold">9 years</span> of experience. I enjoy
+          <span className="font-bold">10 years</span> of experience. I enjoy
           building <span className="italic">sites & apps</span>. My focus are{" "}
           <span className="underline">Vue & React (Vite & Next)</span>.
         </motion.h1>
@@ -37,7 +37,7 @@ export default function Intro() {
           animate={{ opacity: 1, y: 0 }}
         >
           <span className="font-bold">你好，我是岳铭飞</span> 我是一名{" "}有着{" "}
-          <span className="font-bold">9 年</span> 工作经验的 <span className="font-bold">前端开发工程师</span>.
+          <span className="font-bold">10 年</span> 工作经验的 <span className="font-bold">前端开发工程师</span>.
           主要从事 <span className="italic">网站和应用</span>的开发. 我的专注领域是{" "}
           <span className="underline">Vue & React (Vite & Next)</span>.
         </motion.h1>
@@ -60,7 +60,7 @@ export default function Intro() {
 
         <a
           className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
-          href={lang === "en" ? '/Murphy_Yue_Frontend_Developer_Remote.pdf' : '/Murphy_Yue_Frontend_Developer_CN.pdf'}
+          href={lang === "en" ? '/Murphy_Yue_Frontend_Developer_EN.pdf' : '/Murphy_Yue_Frontend_Developer_ZH.pdf'}
           download
         >
           {lang === "en" ? "Download CV" : "下载简历"}
